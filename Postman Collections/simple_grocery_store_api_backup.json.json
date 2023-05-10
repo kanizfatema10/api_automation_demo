@@ -10,7 +10,7 @@
 			"item": [
 				{
 					"name": "API Status",
-					"_postman_id": "82c43ded-9b58-48dc-b87b-e717c863a6a0",
+					"id": "82c43ded-9b58-48dc-b87b-e717c863a6a0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -37,7 +37,7 @@
 							}
 						}
 					],
-					"_postman_id": "ed349cc8-2124-4ed3-b350-d698ccc866a2",
+					"id": "ed349cc8-2124-4ed3-b350-d698ccc866a2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -64,7 +64,7 @@
 							}
 						}
 					],
-					"_postman_id": "be53ae72-0bcd-4418-8c72-29739d5a2440",
+					"id": "be53ae72-0bcd-4418-8c72-29739d5a2440",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -84,8 +84,7 @@
 								{
 									"id": "80ae7ff4-40a8-4721-9fbc-78c19ae59a45",
 									"key": "productId",
-									"value": "4646",
-									"type": "string"
+									"value": "4646"
 								}
 							]
 						}
@@ -133,7 +132,7 @@
 							}
 						}
 					],
-					"_postman_id": "c6ce0f0e-6ce8-46c1-967c-faf56b85b5db",
+					"id": "c6ce0f0e-6ce8-46c1-967c-faf56b85b5db",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -170,7 +169,7 @@
 							}
 						}
 					],
-					"_postman_id": "c0887a4d-736c-4c3b-b528-b4a4545c6a20",
+					"id": "c0887a4d-736c-4c3b-b528-b4a4545c6a20",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -190,8 +189,7 @@
 								{
 									"id": "d9e95c71-a4d2-40ec-8531-6565c1a60a26",
 									"key": "cartId",
-									"value": "{{cartId}}",
-									"type": "string"
+									"value": "{{cartId}}"
 								}
 							]
 						}
@@ -224,7 +222,7 @@
 							}
 						}
 					],
-					"_postman_id": "425159c7-a4b3-4705-9a20-a938b8cf51d8",
+					"id": "425159c7-a4b3-4705-9a20-a938b8cf51d8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -245,8 +243,7 @@
 								{
 									"id": "9f984315-083e-46b8-8b61-33f0168540ad",
 									"key": "cartId",
-									"value": "{{cartId}}",
-									"type": "string"
+									"value": "{{cartId}}"
 								}
 							]
 						}
@@ -291,7 +288,7 @@
 							}
 						}
 					],
-					"_postman_id": "a258ac06-2098-4c39-b529-f80afb414c9e",
+					"id": "a258ac06-2098-4c39-b529-f80afb414c9e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -321,8 +318,7 @@
 								{
 									"id": "f49a123d-4fc4-4c0d-abe9-a7f74f0379cd",
 									"key": "cartId",
-									"value": "{{cartId}}",
-									"type": "string"
+									"value": "{{cartId}}"
 								}
 							]
 						}
@@ -355,7 +351,7 @@
 							}
 						}
 					],
-					"_postman_id": "ce6d1a68-decf-405d-8b34-b6d23f9fb689",
+					"id": "ce6d1a68-decf-405d-8b34-b6d23f9fb689",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -412,7 +408,7 @@
 							}
 						}
 					],
-					"_postman_id": "d6db097e-304a-4353-9fcc-c6ed457524bb",
+					"id": "d6db097e-304a-4353-9fcc-c6ed457524bb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -464,7 +460,7 @@
 							}
 						}
 					],
-					"_postman_id": "9f441ce2-81bb-4aee-be12-9403b2662a3d",
+					"id": "9f441ce2-81bb-4aee-be12-9403b2662a3d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -501,14 +497,12 @@
 								{
 									"id": "c9738e33-ef7d-45f9-8f54-ca1905c741f2",
 									"key": "cartId",
-									"value": "{{cartId}}",
-									"type": "string"
+									"value": "{{cartId}}"
 								},
 								{
 									"id": "ca132a72-db6d-44bf-804e-28f5f760c4ac",
 									"key": "itemId",
-									"value": "{{lastAddedItemId}}",
-									"type": "string"
+									"value": "{{lastAddedItemId}}"
 								}
 							]
 						}
@@ -541,7 +535,7 @@
 							}
 						}
 					],
-					"_postman_id": "0f954346-24d9-4f02-acc9-6509eeeebb30",
+					"id": "0f954346-24d9-4f02-acc9-6509eeeebb30",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -593,7 +587,7 @@
 							}
 						}
 					],
-					"_postman_id": "6fabee56-afe4-48ae-b5ee-4f134f32dfb6",
+					"id": "6fabee56-afe4-48ae-b5ee-4f134f32dfb6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -628,8 +622,7 @@
 								{
 									"id": "6d6bbaa1-a6a5-487a-9297-edff9f218097",
 									"key": "orderId",
-									"value": "{{orderId}}",
-									"type": "string"
+									"value": "{{orderId}}"
 								}
 							]
 						}
@@ -662,7 +655,7 @@
 							}
 						}
 					],
-					"_postman_id": "5b7f9b2e-0164-4c99-be90-63140044cb68",
+					"id": "5b7f9b2e-0164-4c99-be90-63140044cb68",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -697,8 +690,7 @@
 								{
 									"id": "319ca847-3a47-4144-98e7-90c0e590a7e0",
 									"key": "orderId",
-									"value": "{{orderId}}",
-									"type": "string"
+									"value": "{{orderId}}"
 								}
 							]
 						}
@@ -731,7 +723,7 @@
 							}
 						}
 					],
-					"_postman_id": "68e1a6e4-a218-44ac-b5be-4f9ac14c5129",
+					"id": "68e1a6e4-a218-44ac-b5be-4f9ac14c5129",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -768,14 +760,12 @@
 								{
 									"id": "6f59007b-14ef-4920-85d5-6c1f69eda866",
 									"key": "cartId",
-									"value": "{{cartId}}",
-									"type": "string"
+									"value": "{{cartId}}"
 								},
 								{
 									"id": "5860f0b7-4616-437c-9c30-d220d3814b39",
 									"key": "itemId",
-									"value": "{{lastAddedItemId}}",
-									"type": "string"
+									"value": "{{lastAddedItemId}}"
 								}
 							]
 						}
@@ -808,7 +798,7 @@
 							}
 						}
 					],
-					"_postman_id": "71155e8b-21c0-46ea-a8a4-ef8b60c23430",
+					"id": "71155e8b-21c0-46ea-a8a4-ef8b60c23430",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -845,14 +835,12 @@
 								{
 									"id": "4a48a8ee-893f-48da-851d-a44764897608",
 									"key": "cartId",
-									"value": "{{cartId}}",
-									"type": "string"
+									"value": "{{cartId}}"
 								},
 								{
 									"id": "b3625d1e-f943-4aa5-bffe-3b60fe834122",
 									"key": "itemId",
-									"value": "{{lastAddedItemId}}",
-									"type": "string"
+									"value": "{{lastAddedItemId}}"
 								}
 							]
 						}
@@ -885,7 +873,7 @@
 							}
 						}
 					],
-					"_postman_id": "41b379f9-033f-4adf-af63-64833f8ba3ba",
+					"id": "41b379f9-033f-4adf-af63-64833f8ba3ba",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -920,8 +908,7 @@
 								{
 									"id": "ca4e175a-b66d-41f1-aa09-e73363a60a50",
 									"key": "orderId",
-									"value": "{{orderId}}",
-									"type": "string"
+									"value": "{{orderId}}"
 								}
 							]
 						}
@@ -929,7 +916,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "d8094d13-3e8d-42c3-9c61-0606d8b9dc4b"
+			"id": "d8094d13-3e8d-42c3-9c61-0606d8b9dc4b"
 		},
 		{
 			"name": "Missing Authentication",
@@ -965,7 +952,7 @@
 									}
 								}
 							],
-							"_postman_id": "2ee1a43d-f59f-4142-b32e-ec3d370aae0b",
+							"id": "2ee1a43d-f59f-4142-b32e-ec3d370aae0b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1015,7 +1002,7 @@
 									}
 								}
 							],
-							"_postman_id": "330f365b-5de4-4c30-92ff-1c8c9fa0e528",
+							"id": "330f365b-5de4-4c30-92ff-1c8c9fa0e528",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1039,7 +1026,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "5c953fd6-8e03-4094-ab5a-64b4b38a6e55",
+					"id": "5c953fd6-8e03-4094-ab5a-64b4b38a6e55",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -1064,8 +1051,7 @@
 								]
 							}
 						}
-					],
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "Invalid Token",
@@ -1096,7 +1082,7 @@
 									}
 								}
 							],
-							"_postman_id": "930a03fe-86cc-47f0-be97-cdfda4686126",
+							"id": "930a03fe-86cc-47f0-be97-cdfda4686126",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1153,7 +1139,7 @@
 									}
 								}
 							],
-							"_postman_id": "8de97811-ebfd-4d93-b187-f0e81742b2c1",
+							"id": "8de97811-ebfd-4d93-b187-f0e81742b2c1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1180,7 +1166,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "e344cbd2-5570-4003-8cbc-12c7c6a34492",
+					"id": "e344cbd2-5570-4003-8cbc-12c7c6a34492",
 					"event": [
 						{
 							"listen": "prerequest",
@@ -1205,11 +1191,10 @@
 								]
 							}
 						}
-					],
-					"_postman_isSubFolder": true
+					]
 				}
 			],
-			"_postman_id": "99148c91-149c-41fe-bb27-0102d4dd491d",
+			"id": "99148c91-149c-41fe-bb27-0102d4dd491d",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1255,7 +1240,7 @@
 							}
 						}
 					],
-					"_postman_id": "dc3c7505-5734-4933-a8ec-3e5acad726f9",
+					"id": "dc3c7505-5734-4933-a8ec-3e5acad726f9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1304,7 +1289,7 @@
 							}
 						}
 					],
-					"_postman_id": "d17c9a50-7401-47a9-98f8-68046a69272b",
+					"id": "d17c9a50-7401-47a9-98f8-68046a69272b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1352,7 +1337,7 @@
 							}
 						}
 					],
-					"_postman_id": "8b36d1b3-8514-45d8-928f-553ab1179fd6",
+					"id": "8b36d1b3-8514-45d8-928f-553ab1179fd6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1379,7 +1364,7 @@
 					"response": []
 				}
 			],
-			"_postman_id": "58cd2a7d-b7dc-4523-bf16-afa878af227f"
+			"id": "58cd2a7d-b7dc-4523-bf16-afa878af227f"
 		}
 	],
 	"event": [
@@ -1406,34 +1391,31 @@
 	],
 	"variable": [
 		{
-			"id": "851dfd9e-bc13-4176-ae34-07f74c0e9ec7",
+			"id": "f737555c-90fc-404a-8690-c6d2e9be9c57",
 			"key": "baseURL",
-			"value": "https://simple-grocery-store-api.glitch.me",
-			"type": "string"
+			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "70f3dcd1-c27a-4ec6-997a-960571f16d54",
+			"id": "3a9769b5-61aa-4317-8651-5922dc2f15f8",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "15c57cb8-2412-4035-a6ad-c83f0dff1db0",
+			"id": "e9d97cf1-de38-47e5-a0c6-f0781f487694",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "740efb99-c4f5-4ddd-8e11-12fb9ab59e0d",
+			"id": "51c8da16-62ed-49f5-b47e-1084715a852f",
 			"key": "lastAddedItemId",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "a11aa8c3-87b6-4044-a3dd-77130fa2e8a8",
+			"id": "d4dd0eda-2fe1-481a-9663-19d26dcbb485",
 			"key": "orderId",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
