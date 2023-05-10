@@ -360,7 +360,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"clientName\": \"Postman on Kaniz's computer\",\r\n    \"clientEmail\": \"kaniz@example.com\"\r\n}",
+							"raw": "{\r\n    \"clientName\": \"Postman on Kaniz's computer\",\r\n    \"clientEmail\": \"knz@example.com\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1391,29 +1391,29 @@
 	],
 	"variable": [
 		{
-			"id": "c5cf8b5d-0d00-4ac2-9f66-6a4ff0477cec",
+			"id": "c5141126-9592-493d-bdcf-eb38db3e5aaa",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "bd448fd7-91d0-44c9-b99d-613059a11b95",
+			"id": "5e67424c-5e15-4984-a82a-4826ff9dbfc9",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "7a4fce0c-4941-4c0a-b64e-ca198a5b6509",
+			"id": "38d3d74d-3c84-413c-8b73-279ed4fa5f42",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "27fa0b75-fb2c-4ca4-935c-cf065a406f2c",
+			"id": "b530fcba-06ed-4dc8-8175-7feca9eec610",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "ca69a3ba-2659-44c3-8681-6289109c958a",
+			"id": "ed52f995-056f-4d25-b8b2-ab8a3c5b8743",
 			"key": "orderId",
 			"value": ""
 		}
