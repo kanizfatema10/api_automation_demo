@@ -56,9 +56,35 @@
 							"script": {
 								"id": "994fd4f8-cb1b-4cd2-a361-0ee54ad8fd67",
 								"exec": [
+									"console.log(parseInt(pm.collectionVariables.get('productId')));\r",
+									"\r",
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
-									"});"
+									"});\r",
+									"\r",
+									"const response = pm.response.json();\r",
+									"\r",
+									"pm.test(\"Response is an object\"), () => {\r",
+									"    pm.expect(response).to.be.an('object');\r",
+									"}\r",
+									"\r",
+									"pm.test(\"Correct product Id was retrieved\", () => {\r",
+									"    const requestedProductId = parseInt(pm.collectionVariables.get('productId'));\r",
+									"    pm.expect(response.id).to.eql(requestedProductId);\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Product name\", () => {\r",
+									"    pm.expect(response.name).to.be.a('string');\r",
+									"})\r",
+									"\r",
+									"\r",
+									"pm.test(\"Product price\", () => {\r",
+									"    pm.expect(response.price).to.be.a('number');\r",
+									"})\r",
+									"\r",
+									"pm.test(\"Product inStock\", () => {\r",
+									"    pm.expect(response.inStock).to.be.true;\r",
+									"})"
 								],
 								"type": "text/javascript"
 							}
@@ -1370,7 +1396,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "256473f9-81e7-44ea-9ab4-bfd77ba99e9f",
+				"id": "ec46b2a4-5b0e-41f5-b026-55e1d942bc7e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1380,7 +1406,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "50b43d12-8391-4739-9bd9-64be2ada1bd9",
+				"id": "1864602a-1cac-40ba-88da-60c331426b99",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1390,35 +1416,35 @@
 	],
 	"variable": [
 		{
-			"id": "7756535d-22a9-461c-8ed2-4a75a781c8d5",
+			"id": "67c1c64d-7b8f-40cb-8f09-006bbc0b411c",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "af6eccbb-e1f4-4d96-b9f2-aa13c38c3f16",
+			"id": "13faf5ac-8207-4efc-9280-77ad9a2a9c16",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "99838a77-39da-45b7-8951-7e0beb10d869",
+			"id": "f6bc8777-e402-41f7-84ef-b4eca83a9435",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "0e8c85d4-826f-451e-8afb-b7aea40b8312",
+			"id": "57876ac5-1809-4f33-951a-2c525231405d",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "71611c0d-8af9-4d4e-90bd-0ae2297e14a7",
+			"id": "183073b1-379a-427e-ba35-dacb812c7b39",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "674eea41-89be-4b6a-8470-47c4f263e7e3",
+			"id": "17604dc9-b3e6-452d-886e-241ab07739b4",
 			"key": "orderId",
 			"value": ""
 		}
