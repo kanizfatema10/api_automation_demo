@@ -706,15 +706,25 @@
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
 									"\r",
-									"const response = pm.response.json();\r",
-									"const lastOrderId = pm.collectionVariables.get('orderId');\r",
+									"pm.test(\"Created order is in the list.\", () => {\r",
+									"    const response = pm.response.json();\r",
+									"    const lastOrderId = pm.collectionVariables.get('orderId');\r",
+									"    let isOrderIdInResponse = false;\r",
+									"\r",
+									"    response.forEach((order)=> {\r",
+									"        if(order.id === lastOrderId){\r",
+									"            console.log(\"Found it!\");\r",
+									"            isOrderIdInResponse = true;\r",
+									"        }\r",
+									"    })\r",
+									"\r",
+									"    pm.expect(isOrderIdInResponse).to.be.true;\r",
+									"    \r",
+									"})\r",
 									"\r",
 									"\r",
-									"for(i=0; i<response.length; i++){\r",
-									"    if(response[i].id === lastOrderId){\r",
-									"        console.log(\"Found it!\");\r",
-									"    }\r",
-									"}"
+									"    \r",
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -1426,35 +1436,35 @@
 	],
 	"variable": [
 		{
-			"id": "83011e89-7b2f-40e6-8e99-552356b737cc",
+			"id": "e2f44973-d032-4774-a7d1-6a5899544e2c",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "ecb0ba35-fc86-4a11-9d50-61a91a3d658e",
+			"id": "a5262d0f-d227-41b9-8757-185a6834e0da",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "4d7cb30c-d1a5-45eb-9866-110209dcc6ac",
+			"id": "ec712df9-714d-46bd-9fdd-7011d62ba5ae",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "644b32ef-575c-480f-a460-a3640243a847",
+			"id": "3a2dd5e9-9288-44b4-bace-d5eccb76a577",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "4b5940e4-8dcd-4515-88fb-e5c1db44728a",
+			"id": "121247c4-0d18-43f8-aacc-ba84c1e8df42",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "6286c25a-53f1-4130-a121-491ba4d4d077",
+			"id": "24220896-a2b5-418c-aa80-96859e4933d1",
 			"key": "orderId",
 			"value": ""
 		}
