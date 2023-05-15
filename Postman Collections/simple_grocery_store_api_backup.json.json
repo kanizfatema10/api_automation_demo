@@ -709,16 +709,13 @@
 									"pm.test(\"Created order is in the list.\", () => {\r",
 									"    const response = pm.response.json();\r",
 									"    const lastOrderId = pm.collectionVariables.get('orderId');\r",
-									"    let isOrderIdInResponse = false;\r",
 									"\r",
-									"    response.forEach((order)=> {\r",
-									"        if(order.id === lastOrderId){\r",
-									"            console.log(\"Found it!\");\r",
-									"            isOrderIdInResponse = true;\r",
-									"        }\r",
-									"    })\r",
+									"    let order = response.find((order) => order.id === lastOrderId);\r",
+									"    console.log(order);\r",
 									"\r",
-									"    pm.expect(isOrderIdInResponse).to.be.true;\r",
+									"    pm.expect(order).to.be.an('object');\r",
+									"\r",
+									"\r",
 									"    \r",
 									"})\r",
 									"\r",
@@ -1436,35 +1433,35 @@
 	],
 	"variable": [
 		{
-			"id": "e2f44973-d032-4774-a7d1-6a5899544e2c",
+			"id": "3383dfc7-3cb8-4297-98f4-224839548833",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "a5262d0f-d227-41b9-8757-185a6834e0da",
+			"id": "13d4fc08-40a2-4482-8cd2-937a31b15750",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "ec712df9-714d-46bd-9fdd-7011d62ba5ae",
+			"id": "739d7f7d-1889-4e51-a79b-db2cf6a8e869",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "3a2dd5e9-9288-44b4-bace-d5eccb76a577",
+			"id": "a9ee3578-4ec8-44e1-98c6-5ea66a6036b5",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "121247c4-0d18-43f8-aacc-ba84c1e8df42",
+			"id": "12b4a519-6493-4c8a-964e-bd22d0e05465",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "24220896-a2b5-418c-aa80-96859e4933d1",
+			"id": "dc3ba243-98a8-42cc-bdcd-854ac954257c",
 			"key": "orderId",
 			"value": ""
 		}
