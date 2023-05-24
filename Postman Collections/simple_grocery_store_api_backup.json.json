@@ -437,7 +437,7 @@
 							"script": {
 								"id": "64c5b501-887b-42de-a140-fa7306a6bbfc",
 								"exec": [
-									""
+									"console.clear();"
 								],
 								"type": "text/javascript"
 							}
@@ -558,7 +558,7 @@
 							"script": {
 								"id": "e6a71e96-07fd-4707-905e-130a1a6edeed",
 								"exec": [
-									""
+									"console.clear();"
 								],
 								"type": "text/javascript"
 							}
@@ -621,7 +621,7 @@
 							"script": {
 								"id": "6ba01bb5-140b-499f-afe1-2f05d1ac124c",
 								"exec": [
-									""
+									"console.clear();"
 								],
 								"type": "text/javascript"
 							}
@@ -690,7 +690,7 @@
 							"script": {
 								"id": "6e17e7bd-4f7e-4f77-9d6a-d2ffa6798014",
 								"exec": [
-									""
+									"console.clear();"
 								],
 								"type": "text/javascript"
 							}
@@ -846,7 +846,7 @@
 							"script": {
 								"id": "1ebae4ee-e175-41d5-9efd-7d9c538d3942",
 								"exec": [
-									""
+									"console.clear();"
 								],
 								"type": "text/javascript"
 							}
@@ -902,7 +902,7 @@
 							"script": {
 								"id": "dd2e2180-1bb2-4e00-a369-e94c36f29836",
 								"exec": [
-									""
+									"console.clear();"
 								],
 								"type": "text/javascript"
 							}
@@ -1425,7 +1425,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "e42d9228-9063-4cdb-bad1-483ad1e2119f",
+				"id": "ec46b2a4-5b0e-41f5-b026-55e1d942bc7e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1435,7 +1435,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5b2df9b0-be5e-4178-95b4-dccb79d38cc6",
+				"id": "1864602a-1cac-40ba-88da-60c331426b99",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1445,40 +1445,40 @@
 	],
 	"variable": [
 		{
-			"id": "8ce96994-7fbd-4f33-aeb9-17a9161fb35e",
+			"id": "dbf9e256-9117-4530-8aba-d4fae2833e2f",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "f68bf157-2fb9-4c25-b3f7-1615a415c869",
+			"id": "f15997c5-3296-4c4c-9033-999e83a082f1",
 			"key": "accessToken",
-			"value": "872e77390546b9e8f85db463b8db6987cbdee4c004a62f9a7d07e215d06a32ff",
+			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "4589c636-2453-4c86-a96e-e08b61121656",
+			"id": "cd7e0e9b-20e7-4fca-ba21-7c339d06086e",
 			"key": "productId",
-			"value": "4641",
+			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "9446ec76-24b0-4cf8-86eb-07bb2f750e9d",
+			"id": "8518c3e5-6873-4754-bdfc-2ed3fcc4c507",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "25d5ca55-0484-4d6b-a6be-5bb3238ac123",
+			"id": "ee42db84-08ec-43ae-b9c7-1c367f913b30",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "852c3ead-375d-43be-a1db-eea97e2f8d9c",
+			"id": "582dae8e-ec76-427c-8189-86f55e5896e3",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "c1f5425c-aa2d-4949-b1c3-440a37524dcb",
+			"id": "e87fdaf2-957d-405e-94ef-eca154ca0dff",
 			"key": "randomQuantity",
 			"value": ""
 		}
