@@ -753,82 +753,6 @@
 					"response": []
 				},
 				{
-					"name": "Get single order",
-					"event": [
-						{
-							"listen": "test",
-							"script": {
-								"id": "0ff432f0-e5a0-41bd-b271-568dd3644f33",
-								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
-									"pm.test(\"Error message contains the deleted order id.\", () => {\r",
-									"    const response = pm.response.json();\r",
-									"    const deletedOrderId = pm.collectionVariables.get('orderId');\r",
-									"    pm.expect(response).to.haveOwnProperty('error');\r",
-									"    pm.expect(response.error).to.contain(deletedOrderId);\r",
-									"})\r",
-									""
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "1ebae4ee-e175-41d5-9efd-7d9c538d3942",
-								"exec": [
-									"console.clear();"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "6fabee56-afe4-48ae-b5ee-4f134f32dfb6",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{accessToken}}"
-							}
-						},
-						"method": "GET",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseURL}}/orders/:orderId",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"orders",
-								":orderId"
-							],
-							"variable": [
-								{
-									"id": "6d6bbaa1-a6a5-487a-9297-edff9f218097",
-									"key": "orderId",
-									"value": "{{orderId}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Delete cart item",
 					"event": [
 						{
@@ -963,6 +887,82 @@
 							"variable": [
 								{
 									"id": "ca4e175a-b66d-41f1-aa09-e73363a60a50",
+									"key": "orderId",
+									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get single order",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0ff432f0-e5a0-41bd-b271-568dd3644f33",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Error message contains the deleted order id.\", () => {\r",
+									"    const response = pm.response.json();\r",
+									"    const deletedOrderId = pm.collectionVariables.get('orderId');\r",
+									"    pm.expect(response).to.haveOwnProperty('error');\r",
+									"    pm.expect(response.error).to.contain(deletedOrderId);\r",
+									"})\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "1ebae4ee-e175-41d5-9efd-7d9c538d3942",
+								"exec": [
+									"console.clear();"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "6fabee56-afe4-48ae-b5ee-4f134f32dfb6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{accessToken}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/orders/:orderId",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"id": "6d6bbaa1-a6a5-487a-9297-edff9f218097",
 									"key": "orderId",
 									"value": "{{orderId}}"
 								}
@@ -1447,40 +1447,40 @@
 	],
 	"variable": [
 		{
-			"id": "e645a1d8-e875-4d52-8a7a-7a2413eb808e",
+			"id": "64666576-5c0e-42e6-b7f8-b8aae4aca973",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "5420954c-6494-427f-a8f0-fd7699f947ab",
+			"id": "6f01d28e-a4d3-4db8-83b0-91bcc2b4510d",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "5ba236b1-3cd9-448b-a11a-3fd1f0601e85",
+			"id": "49e27f6a-0635-4fcc-bb5f-105aabfcfb4f",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "da698681-4e8f-4172-a946-f6d509c6313c",
+			"id": "c2b22489-b911-47eb-b0a4-428a6e9af643",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "45bd9ddc-3d0e-4cd4-8444-2683b497983e",
+			"id": "29bc7e9c-0921-4505-954a-db71e35b0364",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "b144183a-3795-451b-b5ae-ded6c6b66121",
+			"id": "872f5f54-c0b6-44e0-9f5f-5c6f408cf37c",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "be88e203-4e23-441b-8047-6dc98f13c2a1",
+			"id": "15bb9c4c-13d4-4e49-bcce-2bfeaa1db13c",
 			"key": "randomQuantity",
 			"value": ""
 		}
