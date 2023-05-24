@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "83d8de48-477e-49fe-bec8-d54fa3abf149",
-		"name": "Simple Grocery Store",
+		"name": "Simple_Grocery_Store",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -1447,40 +1447,40 @@
 	],
 	"variable": [
 		{
-			"id": "b80c3980-d67c-4cbe-9d0b-c043143b4e50",
+			"id": "72bd5f9b-879c-4208-811e-52adef82f313",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "6276a1ea-a995-4a4e-8237-a814d98edba1",
+			"id": "8b1847d7-408c-4db9-a0ee-6a4a222398ba",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "ead12234-f34f-4f0c-92c1-09846e255845",
+			"id": "7b779963-f523-4d3b-9f26-f0ad9133d02e",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "62f702e7-db18-4899-93d1-342bb62e7997",
+			"id": "3e7becfc-f404-40a4-ace9-d30742c0ebae",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "7df1e205-c969-47ff-9515-3a4d7ec413cb",
+			"id": "2220be61-6182-4c3f-bd87-33c47d151f74",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "d28ee0ab-5156-46ee-8219-84b41f049072",
+			"id": "0b5dafb6-5991-451b-8043-d0b3a925a5ec",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "09462cce-21cb-4825-abc0-b29546ccf78e",
+			"id": "3728dc5f-f75c-4197-a9f9-ef72e8e8e71c",
 			"key": "randomQuantity",
 			"value": ""
 		}
