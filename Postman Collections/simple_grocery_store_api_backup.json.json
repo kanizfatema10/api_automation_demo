@@ -507,81 +507,6 @@
 					"response": []
 				},
 				{
-					"name": "Delete cart item",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "dd2e2180-1bb2-4e00-a369-e94c36f29836",
-								"exec": [
-									"console.clear();"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "0a669acf-834d-406c-90dc-8487cc5c2bcb",
-								"exec": [
-									"pm.test(\"Status code is 204\", function () {\r",
-									"    pm.response.to.have.status(204);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "9f441ce2-81bb-4aee-be12-9403b2662a3d",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{accessToken}}"
-							}
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseURL}}/carts/:cartId/items/:itemId",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"carts",
-								":cartId",
-								"items",
-								":itemId"
-							],
-							"variable": [
-								{
-									"id": "c9738e33-ef7d-45f9-8f54-ca1905c741f2",
-									"key": "cartId",
-									"value": "{{cartId}}"
-								},
-								{
-									"id": "ca132a72-db6d-44bf-804e-28f5f760c4ac",
-									"key": "itemId",
-									"value": "{{lastAddedItemId}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Register API Client",
 					"event": [
 						{
@@ -828,74 +753,6 @@
 					"response": []
 				},
 				{
-					"name": "Delete an order",
-					"event": [
-						{
-							"listen": "prerequest",
-							"script": {
-								"id": "9134b03e-a642-42f2-84e9-b4bb2d586cd3",
-								"exec": [
-									"console.clear();"
-								],
-								"type": "text/javascript"
-							}
-						},
-						{
-							"listen": "test",
-							"script": {
-								"id": "1a033fb2-70eb-4918-bc5a-4a50badc3d95",
-								"exec": [
-									"pm.test(\"Status code is 204\", function () {\r",
-									"    pm.response.to.have.status(204);\r",
-									"});"
-								],
-								"type": "text/javascript"
-							}
-						}
-					],
-					"id": "41b379f9-033f-4adf-af63-64833f8ba3ba",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": {
-								"token": "{{accessToken}}"
-							}
-						},
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
-						"url": {
-							"raw": "{{baseURL}}/orders/:orderId",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"orders",
-								":orderId"
-							],
-							"variable": [
-								{
-									"id": "ca4e175a-b66d-41f1-aa09-e73363a60a50",
-									"key": "orderId",
-									"value": "{{orderId}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get single order",
 					"event": [
 						{
@@ -965,6 +822,149 @@
 									"id": "6d6bbaa1-a6a5-487a-9297-edff9f218097",
 									"key": "orderId",
 									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an order",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "9134b03e-a642-42f2-84e9-b4bb2d586cd3",
+								"exec": [
+									"console.clear();"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "1a033fb2-70eb-4918-bc5a-4a50badc3d95",
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "41b379f9-033f-4adf-af63-64833f8ba3ba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{accessToken}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/orders/:orderId",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"orders",
+								":orderId"
+							],
+							"variable": [
+								{
+									"id": "ca4e175a-b66d-41f1-aa09-e73363a60a50",
+									"key": "orderId",
+									"value": "{{orderId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete cart item",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "dd2e2180-1bb2-4e00-a369-e94c36f29836",
+								"exec": [
+									"console.clear();"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "0a669acf-834d-406c-90dc-8487cc5c2bcb",
+								"exec": [
+									"pm.test(\"Status code is 204\", function () {\r",
+									"    pm.response.to.have.status(204);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"id": "9f441ce2-81bb-4aee-be12-9403b2662a3d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{accessToken}}"
+							}
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/carts/:cartId/items/:itemId",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"carts",
+								":cartId",
+								"items",
+								":itemId"
+							],
+							"variable": [
+								{
+									"id": "c9738e33-ef7d-45f9-8f54-ca1905c741f2",
+									"key": "cartId",
+									"value": "{{cartId}}"
+								},
+								{
+									"id": "ca132a72-db6d-44bf-804e-28f5f760c4ac",
+									"key": "itemId",
+									"value": "{{lastAddedItemId}}"
 								}
 							]
 						}
@@ -1447,40 +1447,40 @@
 	],
 	"variable": [
 		{
-			"id": "f9d9f903-b298-4da2-948e-99dcc4571cd9",
+			"id": "b0d2a092-5488-4aa0-8aa3-56935aa5652d",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "9bfc6308-4539-4034-9e7d-1827c5607f60",
+			"id": "1822cecd-d5b9-426b-875a-f1c8c4010509",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "2feedd5a-b2b1-4cc2-8035-2693a8505dec",
+			"id": "85e4b34f-948b-45d2-8771-5078342020db",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "f51fe852-4e4f-4536-9227-c50cd4e57cbb",
+			"id": "c2b1cd38-fa82-4d20-9a9d-b8d97cd7bc27",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "cab47d91-16b5-40d4-b85e-47f5fbb84954",
+			"id": "2ad52e53-af13-4be4-8792-b2a929c518b8",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "3b85f4df-f0bf-4ac9-af83-676e06e4b209",
+			"id": "eed2aa49-56e6-4e58-a925-e32d09ffafe4",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "3dde83a8-ffc7-41a9-83bd-7432436fa930",
+			"id": "68d67a56-63a9-4a5f-a735-ec960fa10baa",
 			"key": "randomQuantity",
 			"value": ""
 		}
