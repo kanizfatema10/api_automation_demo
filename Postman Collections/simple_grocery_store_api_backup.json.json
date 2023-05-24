@@ -283,7 +283,7 @@
 							"script": {
 								"id": "342359d5-1b4b-454e-929e-3b2045c802e5",
 								"exec": [
-									"console.clear();"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -1447,40 +1447,40 @@
 	],
 	"variable": [
 		{
-			"id": "2457c3fc-9608-4ee9-b5ea-5e0a5072736f",
+			"id": "c7571870-4db5-41ce-9111-5148222a1008",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "d3d6a983-cbe0-4cca-82db-2e18ac4dc957",
+			"id": "e33ddf46-8912-4796-8172-761a66f61eba",
 			"key": "accessToken",
 			"value": "YOUR ACCESS TOKEN",
 			"type": "string"
 		},
 		{
-			"id": "cf4904d6-4932-47e6-89f0-351de34935f6",
+			"id": "b73dce58-34d0-4ae4-92c8-8357047a1c80",
 			"key": "productId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "1a0c96f6-ced5-4917-badb-efa165c18e6e",
+			"id": "e039f25d-1f25-45e6-a2f5-fc2910306d99",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "2c8c4c3c-dae0-439e-9c08-bb939fd18743",
+			"id": "3040c547-ea1b-428d-a99e-5e353a886b12",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "de8e6375-bad6-43c2-8966-806448e7d8a1",
+			"id": "1f01385b-d419-4178-90b1-9b5888d3918a",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "0d2b8161-04d5-4a26-97eb-6b5d086cae6e",
+			"id": "485520c5-87c8-4979-a8b0-ca88cf9bc53b",
 			"key": "randomQuantity",
 			"value": ""
 		}
