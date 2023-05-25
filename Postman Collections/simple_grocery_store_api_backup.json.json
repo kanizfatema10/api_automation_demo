@@ -846,7 +846,7 @@
 							"script": {
 								"id": "1ebae4ee-e175-41d5-9efd-7d9c538d3942",
 								"exec": [
-									"console.clear();"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -902,7 +902,7 @@
 							"script": {
 								"id": "dd2e2180-1bb2-4e00-a369-e94c36f29836",
 								"exec": [
-									"console.clear();"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -1425,7 +1425,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "ec46b2a4-5b0e-41f5-b026-55e1d942bc7e",
+				"id": "8cb12d7d-fc94-4ec7-94d7-a9c58de30f5f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1435,7 +1435,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1864602a-1cac-40ba-88da-60c331426b99",
+				"id": "e76c078e-5bf7-49b2-a76a-e4d1189ce95f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1445,40 +1445,40 @@
 	],
 	"variable": [
 		{
-			"id": "23f41863-bfe4-4b8c-82cb-326c8ea78b3c",
+			"id": "fbd71033-96f3-462c-a6e5-9c159d4fa5a4",
 			"key": "baseURL",
 			"value": "https://simple-grocery-store-api.glitch.me"
 		},
 		{
-			"id": "a7c21292-7aaa-4416-8715-cf7e7b8bf4e8",
+			"id": "db79f28f-1d1c-4f14-8f65-dc18bb662bc8",
 			"key": "accessToken",
-			"value": "YOUR ACCESS TOKEN",
+			"value": "872e77390546b9e8f85db463b8db6987cbdee4c004a62f9a7d07e215d06a32ff",
 			"type": "string"
 		},
 		{
-			"id": "62c948f9-f387-415b-9d76-aa7a6850a744",
+			"id": "67a0390e-365d-457c-89b9-dc3fccc31acd",
 			"key": "productId",
-			"value": "",
+			"value": "4641",
 			"type": "string"
 		},
 		{
-			"id": "4e69a284-f23b-4a84-ae19-001579d051fc",
+			"id": "385d8355-3d99-41fc-80d0-bb27d2cf1a68",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
 		},
 		{
-			"id": "143eca17-6a4e-4a47-979f-597a12e8bafe",
+			"id": "439361bc-5586-4dae-8f73-7f2314fc3350",
 			"key": "lastAddedItemId",
 			"value": ""
 		},
 		{
-			"id": "30f8fd84-34d6-441f-b36a-0a520f8c7e94",
+			"id": "3b2165ae-b10f-4427-aec0-1a8e53654ce5",
 			"key": "orderId",
 			"value": ""
 		},
 		{
-			"id": "424c06cb-62a7-426a-af36-2dcff7cd0dc1",
+			"id": "a7b174c3-e933-417c-bd2b-ed1c04ab27eb",
 			"key": "randomQuantity",
 			"value": ""
 		}
